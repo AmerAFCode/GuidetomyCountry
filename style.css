@@ -1,0 +1,529 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* =================== PRELOADER =================== */
+#preloader {
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255) url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQm8qcy8shDy2Ei88wOQCqn85AFKDNMSV1ac8HQflVIFJle7Wb7XXklIG0R4rh2T1spmyEKMx7nilK3FIA8P30Dd7PT6aBdqZYe2IIYsB7i_WDbPlIcJRPcNQNyQgG_Tt_w1KdCIXEYm4/s0-e90-rw/Flag_of_Lebanon.gif) no-repeat fixed center;
+    position: fixed;
+    z-index: 9999;
+}
+
+/* =================== NAVIGATION BAR =================== */
+
+nav {
+    background-color: rgb(175, 0, 0);
+    text-align: center;
+    height: 98px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0px 50px 0px 50px;
+    padding: 20px 30px;
+
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 7px solid rgb(255, 255, 255)
+}
+
+nav a:hover {
+    background-color: rgba(150, 0, 0, 0.5);
+    border-bottom-color: #008C3E
+}
+
+/* =================== INTRO/MAP =================== */
+
+/* Section */
+.First-Page {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Introduction */
+#Introduction {
+    flex: 1;
+    margin-left: 20px;
+    padding: 10px;
+
+}
+
+.title {
+    display: flex;
+    min-height: auto;
+}
+
+#Introduction h2 {
+    text-align: center;
+    margin: 0px;
+
+    color: rgb(175, 0, 0);
+    font-size: 130px;
+}
+
+#Introduction img {
+    margin-top: 8px;
+    max-width: 130px;
+    max-height: 130px;
+}
+
+#Introduction p {
+    font-size: 32px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.Lebanon {
+    color: rgb(175, 0, 0)
+}
+
+/* Map */
+#Map {
+    flex: 1;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#Map iframe {
+    width: 100%;
+
+    border: 0;
+    border-radius: 15px
+}
+
+hr {
+    border: none;
+    border-top: 6px solid rgb(175, 0, 0);
+    margin: 50px;
+}
+
+/* =================== DISCOVER LEBANON =================== */
+#secondTitle {
+    color: rgb(175, 0, 0);
+
+    text-align: center;
+    font-size: 70px
+}
+
+#DiscoverVid {
+    display: flex;
+    justify-content: center;
+}
+
+/* =================== FACTS =================== */
+#factTitle {
+    color: rgb(175, 0, 0);
+    text-align: center;
+    font-size: 55px;
+}
+
+#facts1 ol li {
+    display: block;
+    width: clamp(25px, 100%, 100%);
+    border-left: 5px solid rgb(175, 0, 0);
+    background-color: aliceblue;
+
+    padding: 10px;
+
+    font-size: 36px
+}
+
+/* =================== SIGHTS =================== */
+/* ===== INTRO ===== */
+.Sights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sights .General-Beginning {
+    margin: 1vw 10vw 0vw 10vw;
+    width: 80vw;
+    text-align: Center;
+
+}
+
+.Sights .General-Beginning h1 {
+    color: rgb(175, 0, 0);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 100px;
+}
+
+.Sights .General-Beginning h3 {
+    font-size: 30px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.Sights .General-Beginning p {
+    font-size: 30px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* ===== Historical Sites ===== */
+.Sight-Pic {
+    text-align: center;
+}
+
+.Sights h2 {
+    text-align: center;
+    font-size: 70px;
+    color: rgb(175, 0, 0)
+}
+
+/* ===== Historical Loc ===== */
+.Sights .Wonders .Historical-Ruins ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+
+}
+
+.Sights .Wonders .Historical-Ruins li {
+    border-bottom: 5px solid rgb(175, 0, 0);
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+    width: 30%;
+    height: auto;
+}
+
+.Sights .Wonders .Historical-Ruins li h4 {
+    color: rgb(175, 0, 0);
+    text-align: center;
+    font-size: 40px;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+.Sights .Wonders .Historical-Ruins li p {
+    text-align: center;
+    font-size: x-large;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+/* ===================================== 
+/* ===== Cities ===== */
+.Sights .Wonders .Cities ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+}
+
+.Sights .Wonders .Cities li {
+    border-bottom: 5px solid rgb(175, 0, 0);
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+    width: 30%;
+    height: auto;
+}
+
+.Sights .Wonders .Cities li h4 {
+    color: rgb(175, 0, 0);
+    text-align: center;
+    font-size: 40px;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+.Sights .Wonders .Cities li p {
+    text-align: center;
+    font-size: x-large;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+/* ===== Nature ===== */
+.Sights .Wonders .Natural-Reserves ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+}
+
+.Sights .Wonders .Natural-Reserves li {
+    border-bottom: 5px solid rgb(175, 0, 0);
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+    width: 30%;
+    height: auto;
+}
+
+.Sights .Wonders .Natural-Reserves li h4 {
+    color: rgb(175, 0, 0);
+    text-align: center;
+    font-size: 40px;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+.Sights .Wonders .Natural-Reserves li p {
+    text-align: center;
+    font-size: x-large;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+/* =================== CUISINE =================== */
+/* ===== INTRO ===== */
+
+.cuisine h1 {
+    color: rgb(175, 0, 0);
+    font-size: 70px;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.cuisine p {
+    font-size: xx-large;
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+    margin: 0px 50px 0px 50px
+}
+
+.Food-Pic {
+    text-align: center;
+}
+
+.food h2 {
+    text-align: center;
+    font-size: 70px;
+    color: rgb(175, 0, 0)
+}
+
+/* ===== Meals ===== */
+.food .meals ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+
+
+}
+
+.food .meals li {
+    list-style: none;
+    background-color: white;
+    border-bottom: 5px solid rgb(175, 0, 0);
+    border-radius: 20px;
+
+    width: 40%;
+    height: 700px
+}
+
+.food .meals li h4 {
+    color: rgb(175, 0, 0);
+    text-align: center;
+    font-size: 40px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* ===== DIPS ===== */
+.food .dips ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+
+
+}
+
+.food .dips li {
+    list-style: none;
+    background-color: white;
+    border-bottom: 5px solid rgb(175, 0, 0);
+    border-radius: 20px;
+
+    width: 40%;
+    height: 700px
+}
+
+.food .dips li h4 {
+    color: rgb(175, 0, 0);
+    text-align: center;
+    font-size: 40px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* ===== STREET FOOD ===== */
+.food .Street-Food ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+
+
+}
+
+.food .Street-Food li {
+    list-style: none;
+    background-color: white;
+    border-bottom: 5px solid rgb(175, 0, 0);
+    border-radius: 20px;
+
+    width: 40%;
+    height: 700px
+}
+
+.food .Street-Food li h4 {
+    color: rgb(175, 0, 0);
+    text-align: center;
+    font-size: 40px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* ===== MORNING FOOD ===== */
+.food .Morning-Food ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+
+.food .Morning-Food li {
+    list-style: none;
+    background-color: white;
+    border-bottom: 5px solid rgb(175, 0, 0);
+    border-radius: 20px;
+
+    width: 40%;
+    height: 700px
+}
+
+.food .Morning-Food li h4 {
+    color: rgb(175, 0, 0);
+    text-align: center;
+    font-size: 40px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* =================== HISTORY =================== */
+/* ===== PHOENICIA =====  */
+.phoenicia h1 {
+    color: rgb(175, 0, 0);
+    font-size: 70px;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+.phoenicia h2 {
+    color: rgb(175, 0, 0);
+    font-size: 40px;
+    margin-left: 30px;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+.phoenicia p {
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+.phoenicia ul {
+    font-size: 25px;
+    margin-left: 30px;
+    list-style-type: circle;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+/* ===== PERSIANS ===== */
+.Persians h1 {
+    color: rgb(175, 0, 0);
+    font-size: 70px;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+.Persians h2 {
+    color: rgb(175, 0, 0);
+    font-size: 40px;
+    margin-left: 30px;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+.Persians p {
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+.Persians ul {
+    font-size: 25px;
+    margin-left: 30px;
+    list-style-type: circle;
+}
+
+/* ===== GREEKS ===== */
+.Greeks h1 {
+    color: rgb(175, 0, 0);
+    font-size: 70px;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+.Greeks h2 {
+    color: rgb(175, 0, 0);
+    font-size: 40px;
+    margin-left: 30px;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+.Greeks p {
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+/* ===== ROMANS ===== */
+.Romans h1 {
+    color: rgb(175, 0, 0);
+    font-size: 70px;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+.Romans h2 {
+    color: rgb(175, 0, 0);
+    font-size: 40px;
+    margin-left: 30px;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+.Romans p {
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: "Roboto Condensed", sans-serif
+}
+
+.Romans ul {
+    font-size: 25px;
+    margin-left: 30px;
+    list-style-type: circle;
+}
+
+/* ================================= FOOTER ================================= */
+footer {
+    font-size: 1rem;
+    padding: 30px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer p {
+    color: white;
+    margin-bottom: 0px;
+    font-size:xx-large
+}

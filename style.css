@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     padding: 0px;
     margin: 0px;
@@ -17,7 +21,6 @@ body {
 nav {
     background-color: rgb(175, 0, 0);
     text-align: center;
-    height: 98px;
 }
 
 nav a {
@@ -28,7 +31,7 @@ nav a {
     font-size: 18px;
     color: white;
     text-decoration: none;
-    border-bottom: 7px solid rgb(255, 255, 255)
+    border-bottom: 7px solid rgb(175, 0, 0)
 }
 
 nav a:hover {
@@ -165,6 +168,7 @@ hr {
 
 /* ===== Historical Sites ===== */
 .Sight-Pic {
+    max-width: 100%;
     text-align: center;
 }
 
@@ -300,7 +304,8 @@ hr {
 }
 
 /* ===== Meals ===== */
-.food .meals ul {
+.food .food-div ul {
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -310,104 +315,28 @@ hr {
 
 }
 
-.food .meals li {
-    list-style: none;
-    background-color: white;
+.food .food-div li {
     border-bottom: 5px solid rgb(175, 0, 0);
     border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 
-    width: 40%;
-    height: 700px
+    width: 45%;
+    height: auto;
 }
 
-.food .meals li h4 {
+.food .food-div li h4 {
     color: rgb(175, 0, 0);
     text-align: center;
     font-size: 40px;
     font-family: "Roboto Condensed", sans-serif;
 }
 
-/* ===== DIPS ===== */
-.food .dips ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 10px;
-
-
-}
-
-.food .dips li {
-    list-style: none;
-    background-color: white;
-    border-bottom: 5px solid rgb(175, 0, 0);
-    border-radius: 20px;
-
-    width: 40%;
-    height: 700px
-}
-
-.food .dips li h4 {
-    color: rgb(175, 0, 0);
+.food .food-div li p {
     text-align: center;
-    font-size: 40px;
+    font-size: x-large;
     font-family: "Roboto Condensed", sans-serif;
-}
-
-/* ===== STREET FOOD ===== */
-.food .Street-Food ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 10px;
-
-
-}
-
-.food .Street-Food li {
-    list-style: none;
-    background-color: white;
-    border-bottom: 5px solid rgb(175, 0, 0);
-    border-radius: 20px;
-
-    width: 40%;
-    height: 700px
-}
-
-.food .Street-Food li h4 {
-    color: rgb(175, 0, 0);
-    text-align: center;
-    font-size: 40px;
-    font-family: "Roboto Condensed", sans-serif;
-}
-
-/* ===== MORNING FOOD ===== */
-.food .Morning-Food ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 10px;
-
-}
-
-.food .Morning-Food li {
-    list-style: none;
-    background-color: white;
-    border-bottom: 5px solid rgb(175, 0, 0);
-    border-radius: 20px;
-
-    width: 40%;
-    height: 700px
-}
-
-.food .Morning-Food li h4 {
-    color: rgb(175, 0, 0);
-    text-align: center;
-    font-size: 40px;
-    font-family: "Roboto Condensed", sans-serif;
+    margin: 1.5rem 0;
 }
 
 /* =================== HISTORY =================== */
@@ -517,13 +446,16 @@ hr {
 /* ================================= FOOTER ================================= */
 footer {
     font-size: 1rem;
-    padding: 30px 0;
+    padding: 5px 0;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 .footer p {
     color: white;
-    margin-bottom: 0px;
-    font-size:xx-large
+    font-size: xx-large
+}
+
+.self-credit {
+    color:white;
 }
